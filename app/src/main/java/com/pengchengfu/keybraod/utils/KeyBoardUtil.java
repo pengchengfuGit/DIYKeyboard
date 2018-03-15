@@ -73,7 +73,7 @@ public class KeyBoardUtil {
                         }
                     }
                     break;
-                case Keyboard.KEYCODE_CANCEL:
+                case Keyboard.KEYCODE_DONE:
                     keyboardView.setVisibility(View.GONE);
                     break;
                 default:

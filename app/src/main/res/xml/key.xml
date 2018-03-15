@@ -33,7 +33,7 @@
 
 
         <Key
-            android:codes="-3"
+            android:codes="-4"
             android:keyHeight="150dp"
             android:keyLabel="完成"/>
     </Row>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Keybroad.iml" filepath="$PROJECT_DIR$/Keybroad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIYKeyboard.iml" filepath="$PROJECT_DIR$/DIYKeyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

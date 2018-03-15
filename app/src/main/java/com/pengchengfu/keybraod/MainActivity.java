@@ -1,18 +1,12 @@
 package com.pengchengfu.keybraod;
 
-import android.inputmethodservice.KeyboardView;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.EditText;
-
-import com.pengchengfu.keybraod.utils.KeyBoardUtil;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText mInput;
-    private KeyboardView mKeyboard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,19 +17,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mKeyboard = findViewById(R.id.ky_keyboard);
-        mInput = findViewById(R.id.et_input);
+        findViewById(R.id.btn_keyboard).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), KeyboardActivity.class));
+            }
+        }); findViewById(R.id.btn_diy_keyboard).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), DIYKeyboardActivity.class));
+            }
+        });
     }
 
     private void initEvent() {
-        mInput.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if(mInput.hasFocus()){
-                    new KeyBoardUtil(mKeyboard,mInput).showKeyboard();
-                }
-                return false;
-            }
-        });
     }
 }

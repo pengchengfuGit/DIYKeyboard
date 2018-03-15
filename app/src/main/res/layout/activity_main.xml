@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.pengchengfu.keybraod.MainActivity">
 
-    <EditText
-        android:id="@+id/et_input"
+    <Button
+        android:id="@+id/btn_keyboard"
+        android:text="软键盘"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp" />
+        android:layout_height="wrap_content" />
 
-    <android.inputmethodservice.KeyboardView
-        android:id="@+id/ky_keyboard"
+    <Button
+        android:text="自定义软键盘"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true" />
-</RelativeLayout>
+        android:id="@+id/btn_diy_keyboard"
+        android:layout_height="wrap_content" />
+</LinearLayout>
