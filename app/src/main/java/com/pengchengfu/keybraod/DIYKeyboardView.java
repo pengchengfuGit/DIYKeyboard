@@ -13,13 +13,18 @@ import android.util.AttributeSet;
 import java.util.List;
 
 /**
- * Created by San on 2018/3/12.
+ * Created by pengchengfu on 2018/3/12.
  */
 
 public class DIYKeyboardView extends KeyboardView {
 
+
     public DIYKeyboardView(Context context, AttributeSet attrs) {
         super(context, attrs);
+    }
+
+    public DIYKeyboardView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
     }
 
     @Override

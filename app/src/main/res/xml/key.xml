@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:keyboard="http://schemas.android.com/apk/res-auto"
     android:keyHeight="50dp"
     android:keyWidth="25%p"
     android:horizontalGap="1px"
@@ -34,6 +35,7 @@
 
         <Key
             android:codes="-4"
+            keyboard:keyBackground="@drawable/keyboard_blue"
             android:keyHeight="150dp"
             android:keyLabel="完成"/>
     </Row>

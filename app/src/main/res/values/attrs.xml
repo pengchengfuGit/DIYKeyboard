@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="keyboard">
+        <attr name="keyTextSize" format="string" />
+        <attr name="keyTextStyle" format="string" />
+        <attr name="keyBackground" format="reference" />
+    </declare-styleable>
+</resources>
